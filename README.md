@@ -6,11 +6,11 @@ Este proyecto implementa un sistema básico de gestión de envíos utilizando un
 
 Permite:
 
-✅ Agregar un envío
-🔍 Buscar un envío por código
-❌ Eliminar un envío
-📄 Mostrar envíos (orden normal)
-🔄 Mostrar envíos en orden inverso
+* ✅ Agregar un envío
+* 🔍 Buscar un envío por código
+* ❌ Eliminar un envío
+* 📄 Mostrar envíos (orden normal)
+* 🔄 Mostrar envíos en orden inverso
 
 ## ANALISIS DE LAS ESTRUCTURAS DE DATOS COMO SOLUCIÓN.
 
@@ -18,16 +18,16 @@ Permite:
 
 El sistema necesita :
 
- 🔄 Recorrer envíos en ambos sentidos
- ➕ Agregar y eliminar fácilmente
- 🔍 Buscar por código
- 📦 Mantener orden dinámico
+ * 🔄 Recorrer envíos en ambos sentidos
+ * ➕ Agregar y eliminar fácilmente
+ * 🔍 Buscar por código
+ * 📦 Mantener orden dinámico
 
 👉 la lista doblemente enlazada es ideal, porque:
 
- ✔️ Permite ir hacia adelante y hacia atrás
- ✔️ Facilita eliminar nodos sin recorrer desde el inicio
- ✔️ No depende de posiciones fijas (como arreglos)
+ * ✔️ Permite ir hacia adelante y hacia atrás
+ * ✔️ Facilita eliminar nodos sin recorrer desde el inicio
+ * ✔️ No depende de posiciones fijas (como arreglos)
 
 ## ⚡ Complejidad (Big O)
 
