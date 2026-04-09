@@ -34,3 +34,40 @@ class ListaDoble:
             actual = actual.siguiente
 
         return None
+    
+    # ELIMINAR ENVÍO
+    def eliminar(self, codigo):
+        actual = self.cabeza
+
+        while actual:
+            if actual.codigo == codigo:
+
+                # Caso: primer nodo
+                if actual.anterior is None:
+                    self.cabeza = actual.siguiente
+                    if self.cabeza:
+                        self.cabeza.anterior = None
+
+                else:
+                    actual.anterior.siguiente = actual.siguiente
+                    if actual.siguiente:
+                        actual.siguiente.anterior = actual.anterior
+
+                print("Envío eliminado")
+                return
+
+            actual = actual.siguiente
+
+        print("Envío no encontrado")
+
+    # MOSTRAR NORMAL
+    def mostrar(self):
+        actual = self.cabeza
+
+        if actual is None:
+            print("Lista vacía")
+            return
+
+        while actual:
+            print(f"Código: {actual.codigo} | Cliente: {actual.cliente} | Estado: {actual.estado}")
+            actual = actual.siguiente
