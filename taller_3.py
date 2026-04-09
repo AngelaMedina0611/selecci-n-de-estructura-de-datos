@@ -1,5 +1,5 @@
 class Nodo:
-    def _init_(self, codigo, cliente, estado):
+     def __init__(self, codigo, cliente, estado):
         self.codigo = codigo
         self.cliente = cliente
         self.estado = estado
@@ -7,7 +7,7 @@ class Nodo:
         self.anterior = None
 
 class ListaDoble:
-    def _init_(self):
+    def __init__(self):
         self.cabeza = None
     # AGREGAR ENVÍO
     def agregar(self, codigo, cliente, estado):
