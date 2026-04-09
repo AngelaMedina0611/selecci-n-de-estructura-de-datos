@@ -88,3 +88,53 @@ class ListaDoble:
         while actual:
             print(f"Código: {actual.codigo} | Cliente: {actual.cliente} | Estado: {actual.estado}")
             actual = actual.anterior
+
+# MENÚ DE CONSOLA
+def menu():
+    lista = ListaDoble()
+
+    while True:
+        print("\n--- SISTEMA DE ENVÍOS ---")
+        print("1. Agregar envío")
+        print("2. Buscar envío")
+        print("3. Eliminar envío")
+        print("4. Mostrar envíos")
+        print("5. Mostrar envíos inverso")
+        print("6. Salir")
+
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            codigo = input("Código: ")
+            cliente = input("Cliente: ")
+            estado = input("Estado: ")
+            lista.agregar(codigo, cliente, estado)
+
+        elif opcion == "2":
+            codigo = input("Código a buscar: ")
+            envio = lista.buscar(codigo)
+
+            if envio:
+                print(f"Encontrado: {envio.cliente} - {envio.estado}")
+            else:
+                print("No encontrado")
+
+        elif opcion == "3":
+            codigo = input("Código a eliminar: ")
+            lista.eliminar(codigo)
+
+        elif opcion == "4":
+            lista.mostrar()
+
+        elif opcion == "5":
+            lista.mostrar_inverso()
+
+        elif opcion == "6":
+            break
+
+        else:
+            print("Opción inválida")
+
+
+# EJECUCIÓN
+menu()
