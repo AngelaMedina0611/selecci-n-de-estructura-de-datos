@@ -31,6 +31,7 @@ El sistema necesita :
 ## ⚡ Complejidad (Big O)
 
 📊 Lista doblemente enlazada
+
 Operación	Complejidad
 Agregar	       O(n)
 Buscar	       O(n)
@@ -40,12 +41,13 @@ Recorrer	   O(n)
 ## COMPARACIÓN DE ESTRUCTURA DE DATOS 
 
 2. Lista doble vs tabla hash
-Característica	  Lista doble	     Tabla hash
-Búsqueda	     🔴 Lenta	        🟢 Muy rápida
-Orden    	  ✅ Mantiene orden	  ❌ No ordenado
-Recorrido	  ✅ Secuencial	      ❌ No natural
-Inserción	  🟢 Fácil	           🟢 Rápida
-Uso ideal	 Listas dinámicas	    Búsqueda rápida
+
+Característica	    Lista doble	        Tabla hash
+Búsqueda	     🔴 Lenta	          🟢 Muy rápida
+Orden    	   ✅ Mantiene orden	     ❌ No ordenado
+Recorrido	   ✅ Secuencial	         ❌ No natural
+Inserción	   🟢 Fácil	              🟢 Rápida
+Uso ideal	  Listas dinámicas	       Búsqueda rápida
 
 ### CONCLUSIÓN 
 
@@ -80,91 +82,60 @@ Las limitaciones son las siguientes :
 
 ## ⚙️ Estructura del Código
 
-### 🔹 Clase `Nodo`
+🔹 Clase Nodo
 
-Representa cada envío en la lista.
+Representa cada envío dentro de la lista.
 
-Atributos:
+### Atributos:
 
-* `codigo`: Identificador del envío
-* `cliente`: Nombre del cliente
-* `estado`: Estado del envío
-* `siguiente`: Referencia al siguiente nodo
-* `anterior`: Referencia al nodo anterior
+codigo: Identificador del envío
+cliente: Nombre del cliente
+estado: Estado del envío
+siguiente: Apunta al siguiente nodo
+anterior: Apunta al nodo anterior
 
----
+🔹 Clase ListaDoble
 
-### 🔹 Clase `ListaDoble`
+Gestiona la lista doblemente enlazada.
 
-Gestiona la lista de envíos.
+Métodos principales:
 
-#### Métodos principales:
+agregar(): Inserta un nuevo envío al final
+buscar(): Busca un envío por código
+eliminar(): Elimina un envío específico
+mostrar(): Recorre la lista hacia adelante
+mostrar_inverso(): Recorre la lista hacia atrás
 
-* `agregar(codigo, cliente, estado)`
-  Agrega un nuevo envío al final de la lista
+## 🔹 Función menu()
 
-* `buscar(codigo)`
-  Busca un envío por su código
+Permite la interacción con el usuario mediante consola.
 
-* `eliminar(codigo)`
-  Elimina un envío de la lista
+Opciones disponibles:
 
-* `mostrar()`
-  Muestra los envíos en orden normal
+Agregar envío
+Buscar envío
+Eliminar envío
+Mostrar envíos
+Mostrar envíos inverso
+Salir
 
-* `mostrar_inverso()`
-  Muestra los envíos en orden inverso
+## ▶️ Cómo ejecutar
 
----
+Asegúrate de tener Python instalado
+Guarda el archivo como main.py
+Ejecuta en la terminal:
+python main.py
 
-## 🖥️ Menú de Consola
+## 📝 Ejemplo de uso
 
-El sistema incluye un menú interactivo con las siguientes opciones:
+--- SISTEMA DE ENVÍOS ---
 
-```
 1. Agregar envío
 2. Buscar envío
 3. Eliminar envío
 4. Mostrar envíos
 5. Mostrar envíos inverso
 6. Salir
-```
-
----
-
-## ▶️ Ejecución
-
-1. Asegúrate de tener Python instalado
-2. Ejecuta el archivo:
-
-```bash
-python taller_3.py
-```
-
----
-
-
-## 💡 Ejemplo de uso
-
-* Agregar un envío:
-
-  * Código: 001
-  * Cliente: Juan
-  * Estado: En tránsito
-
-* Buscar:
-
-  * Resultado: Juan - En tránsito
-
----
-
-## 📚 Conceptos aplicados
-
-* Listas doblemente enlazadas
-* Estructuras de datos dinámicas
-* Recorridos bidireccionales
-* Manipulación de nodos
-
 ---
 
 ## 👨‍💻 Autor
