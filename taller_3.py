@@ -23,3 +23,14 @@ class ListaDoble:
 
         actual.siguiente = nuevo
         nuevo.anterior = actual
+    
+    # BUSCAR ENVÍO
+    def buscar(self, codigo):
+        actual = self.cabeza
+
+        while actual:
+            if actual.codigo == codigo:
+                return actual
+            actual = actual.siguiente
+
+        return None
