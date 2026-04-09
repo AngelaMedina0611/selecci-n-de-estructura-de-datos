@@ -71,3 +71,20 @@ class ListaDoble:
         while actual:
             print(f"Código: {actual.codigo} | Cliente: {actual.cliente} | Estado: {actual.estado}")
             actual = actual.siguiente
+            
+     # MOSTRAR INVERSO
+    def mostrar_inverso(self):
+        actual = self.cabeza
+
+        if actual is None:
+            print("Lista vacía")
+            return
+
+        # ir al final
+        while actual.siguiente:
+            actual = actual.siguiente
+
+        # recorrer hacia atrás
+        while actual:
+            print(f"Código: {actual.codigo} | Cliente: {actual.cliente} | Estado: {actual.estado}")
+            actual = actual.anterior
