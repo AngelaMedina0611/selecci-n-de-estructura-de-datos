@@ -152,5 +152,5 @@ Permite la interacción con el usuario mediante consola.
 
 * Angela Maria Medina 
 * Gustavo Valencia 
-* kevin 
+* kevin Preciado
 
