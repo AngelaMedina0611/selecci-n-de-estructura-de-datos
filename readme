@@ -1,0 +1,175 @@
+# 📦 Sistema de Gestión de Envíos con Lista Doblemente Enlazada
+
+## Descripción
+
+Este proyecto implementa un sistema básico de gestión de envíos utilizando una **lista doblemente enlazada** en Python. Donde soluciona un problema en una empresa de logistica para mejorar el control de envios en tiempo real.
+
+Permite:
+
+* Agregar envíos
+* Buscar envíos por código
+* Eliminar envíos
+* Mostrar la lista en orden normal e inverso
+
+## ANALISIS DE LAS ESTRUCTURAS DE DATOS COMO SOLUCIÓN.
+
+### ¿Porque utilizar lista doblemente enlazada ?
+
+El sistema necesita :
+
+🔄 Recorrer envíos en ambos sentidos
+➕ Agregar y eliminar fácilmente
+🔍 Buscar por código
+📦 Mantener orden dinámico
+
+👉 la lista doblemente enlazada es ideal, porque:
+
+✔️ Permite ir hacia adelante y hacia atrás
+✔️ Facilita eliminar nodos sin recorrer desde el inicio
+✔️ No depende de posiciones fijas (como arreglos)
+
+## ⚡ Complejidad (Big O)
+
+📊 Lista doblemente enlazada
+Operación	Complejidad
+Agregar	       O(n)
+Buscar	       O(n)
+Eliminar	   O(n)
+Recorrer	   O(n)
+
+## COMPARACIÓN DE ESTRUCTURA DE DATOS 
+
+2. Lista doble vs tabla hash
+Característica	  Lista doble	     Tabla hash
+Búsqueda	     🔴 Lenta	        🟢 Muy rápida
+Orden    	  ✅ Mantiene orden	  ❌ No ordenado
+Recorrido	  ✅ Secuencial	      ❌ No natural
+Inserción	  🟢 Fácil	           🟢 Rápida
+Uso ideal	 Listas dinámicas	    Búsqueda rápida
+
+### CONCLUSIÓN 
+
+👉 La lista doblemente enlazada es mejor porque permite recorridos bidireccionales y facilita la eliminación de nodos, lo cual no es posible en una lista simplemente enlazada.
+
+👉 Aunque la tabla hash tiene mejor complejidad O(1) en búsqueda, no mantiene orden ni permite recorridos secuenciales, por lo que no es adecuada para este sistema.
+
+👉 La complejidad de la lista doblemente enlazada es O(n) en búsqueda, inserción y eliminación.
+
+## PREGUNTAS DE REFLEXIÓN 
+
+1.  ¿Cómo cambiaría la eficiencia del sistema si se utilizara otra estructura de 
+datos diferente a la seleccionada?
+
+Si se utilizara una lista simplemente enlazada, la eficiencia en inserción y búsqueda se mantendría, pero se perdería la capacidad de recorrer en ambos sentidos, lo que afecta directamente los requerimientos del sistema.
+Por otro lado, si se utilizara una tabla hash, la búsqueda y eliminación mejorarían a O(1), pero se perdería el orden de los datos y la posibilidad de recorrerlos secuencialmente en ambos sentidos, lo que hace que no sea adecuada para este problema.
+Por lo tanto, la lista doblemente enlazada ofrece el mejor balance entre eficiencia y funcionalidad.
+
+2. ¿Qué limitaciones presenta la estructura elegida en escenarios de gran 
+volumen de datos?
+Las limitaciones son las siguientes :
+
+👉 En escenarios de gran volumen de datos, la lista doblemente enlazada se ve limitada por su complejidad lineal O(n) en operaciones de búsqueda, inserción (en posición específica) y eliminación, ya que requiere recorridos secuenciales.
+
+👉 Adicionalmente  el uso de dos punteros por nodo (anterior y siguiente) incrementa el consumo de memoria, afectando la escalabilidad.
+
+👉 Finalmente, la ausencia de acceso directo por índice reduce el rendimiento frente a estructuras como las tablas hash, que ofrecen complejidad promedio O(1).
+
+
+
+---
+
+## ⚙️ Estructura del Código
+
+### 🔹 Clase `Nodo`
+
+Representa cada envío en la lista.
+
+Atributos:
+
+* `codigo`: Identificador del envío
+* `cliente`: Nombre del cliente
+* `estado`: Estado del envío
+* `siguiente`: Referencia al siguiente nodo
+* `anterior`: Referencia al nodo anterior
+
+---
+
+### 🔹 Clase `ListaDoble`
+
+Gestiona la lista de envíos.
+
+#### Métodos principales:
+
+* `agregar(codigo, cliente, estado)`
+  Agrega un nuevo envío al final de la lista
+
+* `buscar(codigo)`
+  Busca un envío por su código
+
+* `eliminar(codigo)`
+  Elimina un envío de la lista
+
+* `mostrar()`
+  Muestra los envíos en orden normal
+
+* `mostrar_inverso()`
+  Muestra los envíos en orden inverso
+
+---
+
+## 🖥️ Menú de Consola
+
+El sistema incluye un menú interactivo con las siguientes opciones:
+
+```
+1. Agregar envío
+2. Buscar envío
+3. Eliminar envío
+4. Mostrar envíos
+5. Mostrar envíos inverso
+6. Salir
+```
+
+---
+
+## ▶️ Ejecución
+
+1. Asegúrate de tener Python instalado
+2. Ejecuta el archivo:
+
+```bash
+python taller_3.py
+```
+
+---
+
+
+## 💡 Ejemplo de uso
+
+* Agregar un envío:
+
+  * Código: 001
+  * Cliente: Juan
+  * Estado: En tránsito
+
+* Buscar:
+
+  * Resultado: Juan - En tránsito
+
+---
+
+## 📚 Conceptos aplicados
+
+* Listas doblemente enlazadas
+* Estructuras de datos dinámicas
+* Recorridos bidireccionales
+* Manipulación de nodos
+
+---
+
+## 👨‍💻 Autor
+
+* Angela Maria Medina 
+* Gustavo Valencia 
+* kevin 
+
