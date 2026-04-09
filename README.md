@@ -17,37 +17,39 @@ Permite:
 
 El sistema necesita :
 
-🔄 Recorrer envíos en ambos sentidos
-➕ Agregar y eliminar fácilmente
-🔍 Buscar por código
-📦 Mantener orden dinámico
+* 🔄 Recorrer envíos en ambos sentidos
+* ➕ Agregar y eliminar fácilmente
+* 🔍 Buscar por código
+* 📦 Mantener orden dinámico
 
 👉 la lista doblemente enlazada es ideal, porque:
 
-✔️ Permite ir hacia adelante y hacia atrás
-✔️ Facilita eliminar nodos sin recorrer desde el inicio
-✔️ No depende de posiciones fijas (como arreglos)
+* ✔️ Permite ir hacia adelante y hacia atrás
+* ✔️ Facilita eliminar nodos sin recorrer desde el inicio
+* ✔️ No depende de posiciones fijas (como arreglos)
 
 ## ⚡ Complejidad (Big O)
 
 📊 Lista doblemente enlazada
 
-Operación	Complejidad
-Agregar	       O(n)
-Buscar	       O(n)
-Eliminar	   O(n)
-Recorrer	   O(n)
+| Operación | Complejidad |
+|----------|------------|
+| Agregar  | O(n)       |
+| Buscar   | O(n)       |
+| Eliminar | O(n)       |
+| Recorrer | O(n)       |
 
 ## COMPARACIÓN DE ESTRUCTURA DE DATOS 
 
 2. Lista doble vs tabla hash
 
-Característica	    Lista doble	        Tabla hash
-Búsqueda	     🔴 Lenta	          🟢 Muy rápida
-Orden    	   ✅ Mantiene orden	     ❌ No ordenado
-Recorrido	   ✅ Secuencial	         ❌ No natural
-Inserción	   🟢 Fácil	              🟢 Rápida
-Uso ideal	  Listas dinámicas	       Búsqueda rápida
+| Característica | Lista doble       | Tabla hash        |
+|---------------|--------------------|-------------------|
+| Búsqueda      | 🔴 Lenta           | 🟢 Muy rápida     |
+| Orden         | ✅ Mantiene orden  | ❌ No ordenado    |
+| Recorrido     | ✅ Secuencial      | ❌ No natural     |
+| Inserción     | 🟢 Fácil           | 🟢 Rápida         |
+| Uso ideal     | Listas dinámicas   | Búsqueda rápida    |
 
 ### CONCLUSIÓN 
 
@@ -96,35 +98,35 @@ anterior: Apunta al nodo anterior
 
 🔹 Clase ListaDoble
 
-Gestiona la lista doblemente enlazada.
+### Gestiona la lista doblemente enlazada.
 
-Métodos principales:
+#### Métodos principales:
 
-agregar(): Inserta un nuevo envío al final
-buscar(): Busca un envío por código
-eliminar(): Elimina un envío específico
-mostrar(): Recorre la lista hacia adelante
-mostrar_inverso(): Recorre la lista hacia atrás
+* agregar(): Inserta un nuevo envío al final
+* buscar(): Busca un envío por código
+* eliminar(): Elimina un envío específico
+* mostrar(): Recorre la lista hacia adelante
+* mostrar_inverso(): Recorre la lista hacia atrás
 
 ## 🔹 Función menu()
 
 Permite la interacción con el usuario mediante consola.
 
-Opciones disponibles:
+#### Opciones disponibles:
 
-Agregar envío
-Buscar envío
-Eliminar envío
-Mostrar envíos
-Mostrar envíos inverso
-Salir
+* Agregar envío
+* Buscar envío
+* Eliminar envío
+* Mostrar envíos
+* Mostrar envíos inverso
+* Salir
 
 ## ▶️ Cómo ejecutar
 
-Asegúrate de tener Python instalado
-Guarda el archivo como main.py
-Ejecuta en la terminal:
-python main.py
+* Asegúrate de tener Python instalado
+* Guarda el archivo como main.py
+* Ejecuta en la terminal:
+* python main.py
 
 ## 📝 Ejemplo de uso
 
