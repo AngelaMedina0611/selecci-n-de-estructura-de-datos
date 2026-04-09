@@ -79,6 +79,13 @@ Las limitaciones son las siguientes :
 
 👉 Finalmente, la ausencia de acceso directo por índice reduce el rendimiento frente a estructuras como las tablas hash, que ofrecen complejidad promedio O(1).
 
+3. ¿En qué casos reales sería más conveniente utilizar una tabla hash en lugar de 
+listas enlazadas? 
+
+en los sistemas donde se enfoquen en la búsqueda rápida de datos ya que las tablas hash son muy eficientes en ese tipo de situaciones  ejemplo 
+sistemas de  empresas logísticas donde se tiene un seguimiento del los envíos para su debida entrega necesitan por lo tanto hacer la búsqueda de 5mil envíos y localizar el envió con un de manera rápida les ahorra mucho tiempo 
+lo mismo en paginas donde se realice búsquedas de pacientes ya que seria el mismo proceso el numero de identificación para buscar una personas entre 100 pacientes registrados ese día para agendar la cita correspondiente
+
 
 
 ---
