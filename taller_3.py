@@ -60,7 +60,7 @@ class ListaDoble:
 
         print("Envío no encontrado")
 
-    # MOSTRAR NORMAL
+   # MOSTRAR NORMAL
     def mostrar(self):
         actual = self.cabeza
 
